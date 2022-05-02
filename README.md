@@ -28,10 +28,11 @@
 
 ## SQL文件
 
-`db_sql `foldr下
+[SQL File Link](https://github.com/yifanzhang13/SSMP_CRUD/blob/main/db_sql/tbl_book.sql)
 
 
 
 ## 文档
 
-`doc` folder下
+[Document Link](https://github.com/yifanzhang13/SSMP_CRUD/blob/main/doc/document.pdf)
+
