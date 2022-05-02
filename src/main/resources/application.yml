@@ -1,0 +1,33 @@
+# 2.配置相关信息
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/mybatis
+#    username: root
+#    password: 865330
+#    type: com.alibaba.druid.pool.DruidDataSource
+
+
+# 设置Druid相关配置
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/mybatis?serverTimezone=UTC
+      username: root
+      password: 865330
+
+# 设置MyBatisPlus相关配置
+mybatis-plus:
+  global-config:
+    db-config:
+      table-prefix: tbl_
+      # 使用数据库的id自增而不是MP自带的雪花算法自增
+      id-type: auto
+  # 开启MP日志模式
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+# 设置端口号
+server:
+  port: 80
